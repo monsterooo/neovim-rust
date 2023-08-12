@@ -23,6 +23,27 @@ return require('packer').startup(function(use)
     },
   }
 
+  -- 光标跳跃后给一个闪烁，可以快速定位光标在哪里
+  use 'danilamihailov/beacon.nvim'
+
+  -- Lua 编写的 Neovim 配色方案
+  use 'Mofiqul/dracula.nvim'
+
+  -- 启动屏幕
+  use 'mhinz/vim-startify'
+
+  -- 状态栏
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
+  -- 快速查找文件
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.2',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   -- 克隆 packer.nvim 后自动设置您的配置
   if packer_bootstrap then
     require('packer').sync()
