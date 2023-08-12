@@ -2,6 +2,10 @@
 
 neovim 开发 rust 的编辑器配置
 
+## 屏幕截图
+![WX20230812-230400](https://github.com/monsterooo/neovim-rust/assets/18432680/e937ee9e-b3c1-42ea-a240-66d2e014938f)
+
+
 ## 安装
 
 执行以下命令，克隆仓库到本地配置文件夹下即可
