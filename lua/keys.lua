@@ -10,3 +10,6 @@ map('n', 'ff', [[:Telescope find_files]], {})
 
 -- t 当前文件查看类或函数结构
 -- map('n', 't', [[:TagbarToggle]], {})
+
+-- 格式化整个文件
+map("n", "<leader>i", "gg=G", {})

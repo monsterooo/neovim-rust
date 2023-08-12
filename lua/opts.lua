@@ -1,4 +1,5 @@
 --[[ opts.lua ]]
+
 local opt = vim.opt
 
 -- [[ Context ]]
@@ -31,3 +32,23 @@ opt.tabstop = 4                  -- 空格制表符数量
 -- [[ Splits ]]
 opt.splitright = true            -- 将新窗口放置在当前窗口的右侧
 opt.splitbelow = true            -- 将新窗口放置在当前窗口下方
+
+-- [[ cmp ]]
+--Set completeopt to have a better completion experience
+-- :help completeopt
+-- menuone: popup even when there's only one match
+-- noinsert: Do not insert text until a selection is made
+-- noselect: Do not select, force to select one from the menu
+-- shortness: avoid showing extra messages when using completion
+-- updatetime: set updatetime for CursorHold
+vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
+vim.opt.shortmess = vim.opt.shortmess + { c = true}
+vim.api.nvim_set_option('updatetime', 300) 
+
+-- [[ Treesitter folding ]]
+-- 开启 Folding
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+-- 默认不要折叠
+-- https://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
+vim.wo.foldlevel = 99

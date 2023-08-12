@@ -44,6 +44,37 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- 修改提示
+  use 'akinsho/bufferline.nvim'
+
+  -- git 修改提示
+  use 'lewis6991/gitsigns.nvim'
+
+  -- 高亮
+  use 'nvim-treesitter/nvim-treesitter'
+
+  -- 自动配对
+  use("windwp/nvim-autopairs")
+
+  -- lsp
+  use "williamboman/mason.nvim"
+  -- mason的扩充
+  use 'williamboman/mason-lspconfig.nvim'
+  -- LSP配置的集合
+  use 'neovim/nvim-lspconfig' 
+  -- 自动设置lspconfig的工具
+  use 'simrat39/rust-tools.nvim'
+  
+  -- 自动完成:
+  use 'hrsh7th/nvim-cmp' 
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lua'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
+  use 'hrsh7th/cmp-vsnip'                             
+  use 'hrsh7th/cmp-path'                              
+  use 'hrsh7th/cmp-buffer'                            
+  use 'hrsh7th/vim-vsnip'
+
   -- 查看给定文件中定义的任何类或函数的结构
   -- 需要安装ctag依赖，暂时禁用
   -- use 'majutsushi/tagbar'
