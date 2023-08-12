@@ -44,6 +44,10 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- 查看给定文件中定义的任何类或函数的结构
+  -- 需要安装ctag依赖，暂时禁用
+  -- use 'majutsushi/tagbar'
+
   -- 克隆 packer.nvim 后自动设置您的配置
   if packer_bootstrap then
     require('packer').sync()

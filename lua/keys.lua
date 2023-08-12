@@ -7,3 +7,6 @@ map('n', 'n', [[:NvimTreeToggle]], {})
 
 -- ff 打开快速文件查找
 map('n', 'ff', [[:Telescope find_files]], {})
+
+-- t 当前文件查看类或函数结构
+-- map('n', 't', [[:TagbarToggle]], {})
