@@ -48,3 +48,15 @@ Enter 往外扩充选择，Backspace 相反不断内敛选择，Space 往后选�
 
 * `t` 打开终端
 * `Esc` 关闭终端
+
+## 代码注释
+
+Normal 模式
+* `gcc` 使用单行注释当前行
+* `gbc` 使用块只是当前行
+* `[count]gcc` 向下注释count行
+* `[count]gbc` 向下注释count行
+
+Visual 模式
+* `gc` 触发单行注释
+* `gb` 触发块注释

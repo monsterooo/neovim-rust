@@ -19,3 +19,4 @@ require('tab')       -- ab
 require('highlight') -- highlight
 require('lsp')       -- rust
 require('cmplete')   -- cmplete
+require('Comment').setup()

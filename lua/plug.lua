@@ -78,6 +78,14 @@ return require('packer').startup(function(use)
   -- 终端支持
   use 'voldikss/vim-floaterm'
 
+  -- 代码注释
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
   -- 查看给定文件中定义的任何类或函数的结构
   -- 需要安装ctag依赖，暂时禁用
   -- use 'majutsushi/tagbar'
