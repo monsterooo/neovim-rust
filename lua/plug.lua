@@ -75,6 +75,9 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-buffer'                            
   use 'hrsh7th/vim-vsnip'
 
+  -- 终端支持
+  use 'voldikss/vim-floaterm'
+
   -- 查看给定文件中定义的任何类或函数的结构
   -- 需要安装ctag依赖，暂时禁用
   -- use 'majutsushi/tagbar'

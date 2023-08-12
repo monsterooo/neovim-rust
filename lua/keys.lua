@@ -13,3 +13,8 @@ map('n', 'ff', [[:Telescope find_files]], {})
 
 -- 格式化整个文件
 map("n", "<leader>i", "gg=G", {})
+
+-- FloaTerm 快捷键
+map('n', "<leader>ft", ":FloatermNew --name=myfloat --height=0.8 --width=0.7 --autoclose=2 fish <CR> ", {})
+map('n', "t", ":FloatermToggle myfloat<CR>", {})
+map('t', "<Esc>", "<C-\\><C-n>:q<CR>", {})
