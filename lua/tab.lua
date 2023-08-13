@@ -1,6 +1,6 @@
 -- [[ tab.lua ]]
 
--- 文件修改提示
+-- 文件修改提示与tab标签集成
 require("bufferline").setup({
     
   options = {
