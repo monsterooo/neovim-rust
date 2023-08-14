@@ -5,7 +5,7 @@ local opt = vim.opt
 -- [[ Context ]]
 opt.colorcolumn = '80'           -- 显示最大行长度的列
 opt.number = true                -- 显示行号
-opt.relativenumber = true        -- 显示相关的行号
+-- opt.relativenumber = true        -- 显示相关的行号
 opt.scrolloff = 4                -- 控制光标与顶部或是底部有多少距离时发生翻滚
 opt.signcolumn = "yes"           -- 显示标志栏
 
