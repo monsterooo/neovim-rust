@@ -1,7 +1,19 @@
 -- [[ highlight.lua ]]
 
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "vim","bash","json","lua","rust", "toml" },
+  ensure_installed = {
+    "vim",
+    "bash",
+    "json",
+    "lua",
+    "rust", 
+    "toml",
+    "tsx",
+    "css",
+    "html",
+    "json",
+    "yaml"
+  },
   auto_install = true,
   highlight = { enable = true },
   indent = { enable = true },
