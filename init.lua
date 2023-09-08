@@ -20,3 +20,6 @@ require('highlight') -- highlight
 require('lsp')       -- rust
 require('cmplete')   -- cmplete
 require('Comment').setup()
+
+-- 插件配置
+require('config/cfg_dracula')

@@ -35,7 +35,11 @@ return require('packer').startup(function(use)
   -- 状态栏
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+      opt = true,
+      theme = 'dracula-nvim'
+    }
   }
 
   -- 快速查找文件
