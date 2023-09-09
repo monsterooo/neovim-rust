@@ -1,5 +1,10 @@
 --[[ init.lua ]]
 
+-- 如果在vscode中加载neovim则不使用这里的配置
+if (vim.g.vscode) then
+  return
+end
+
 -- 前缀键配置
 -- 前缀键解释 https://blog.csdn.net/qq_32949893/article/details/113339607
 -- 前缀键要配置在所有配置文件之间，避免绑定键先执行
