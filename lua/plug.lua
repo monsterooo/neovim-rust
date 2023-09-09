@@ -89,6 +89,12 @@ return require('packer').startup(function(use)
         require('Comment').setup()
     end
   }
+  
+  -- error lens
+  use {
+    'chikko80/error-lens.nvim',
+    requires = {'nvim-telescope/telescope.nvim'}
+  }
 
   -- 查看给定文件中定义的任何类或函数的结构
   -- 需要安装ctag依赖，暂时禁用

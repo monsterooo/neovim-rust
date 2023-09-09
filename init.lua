@@ -28,3 +28,4 @@ require('Comment').setup()
 
 -- 插件配置
 require('config/cfg_dracula')
+require('config/cfg_error_lens')
